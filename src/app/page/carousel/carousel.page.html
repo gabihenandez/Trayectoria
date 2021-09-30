@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>carousel</ion-title>
+  </ion-toolbar>
+</ion-header>  
+
+<ion-list>
+  <ion-card *ngFor="let item of dataJson">
+    <ion-item>
+      <ion-avatar slot="start">
+        <img [src]="item.img">
+      </ion-avatar>
+      <ion-label>
+        <h2>{{item.name}}</h2>
+        <h3>{{item.edad}}</h3>
+      </ion-label>
+    </ion-item>
+  </ion-card>
+</ion-list> 
+
+  <ion-content>
+    <ion-button color="secondary" (click)="vista2()">Regresar</ion-button>
+  </ion-content>
+
+
